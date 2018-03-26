@@ -1,0 +1,263 @@
+/* @font-face {
+     font-family: Arial;
+     src: local(../fonts/arial.ttf), url(../fonts/arial.ttf);
+} */
+
+h1 {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+h3 {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
+p {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+blockquote {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+
+/*------------------------------*\
+    Grid System
+\*------------------------------*/
+
+.row,
+.column {
+    box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.column {
+    position: relative;
+    float: left;
+}
+
+.column + .column {
+    margin-left: 1.6%;
+}
+
+.column-1 {
+    width: 6.86666666667%;
+}
+
+.column-2 {
+    width: 15.3333333333%;
+}
+
+.column-3 {
+    width: 23.8%;
+}
+
+.column-4 {
+    width: 32.2666666667%;
+}
+
+.column-6 {
+    width: 49.2%;
+}
+
+.column-8 {
+    width: 66.1333333333%;
+}
+
+.column-9 {
+    width: 74.6%;
+}
+
+.column-10 {
+    width: 83.0666666667%;
+}
+
+.column-12 {
+    width: 100%;
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 550px) {
+    .column-1,
+    .column-2,
+    .column-3,
+    .column-4,
+    .column-5,
+    .column-6,
+    .column-7,
+    .column-8,
+    .column-9,
+    .column-10,
+    .column-11,
+    .column-12 {
+        width: auto;
+        float: none;
+    }
+
+    .column + .column {
+        margin-left: 0;
+    }
+}
+
+/*------------------------------*\
+    Styling
+\*------------------------------*/
+
+body {
+    padding: 20px;
+}
+
+.container {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.column {
+    padding: 5px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 550px) {
+    .row {
+        margin-bottom: 0;
+    }
+    .column {
+        margin-bottom: 10px;
+    }
+    .row:last-child .column:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/*------------------------------*\
+    Header
+\*------------------------------*/
+
+header {
+  text-align: center;
+}
+
+/*------------------------------*\
+    Form
+\*------------------------------*/
+
+
+input {
+  background: url(../img/search.png) no-repeat scroll 1px 1px;
+  padding-left:18px;
+  width: 206px;
+  height: 18px;
+  background-color: #eee;
+  border-radius: 0px;
+  border: 1px solid #9A9A9A;
+  margin-bottom: 6px;
+}
+
+button{
+  width: 98px;
+  height: 21px;
+  background-color: #00A5DE;
+  color: #fff;
+  border-radius: 0px;
+  border: 1px solid #ccc;
+
+}
+
+/*------------------------------*\
+    Table
+\*------------------------------*/
+
+table{
+  width: 100%;
+  padding: 10px 15px;
+  color: #000;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+table td:first-child {
+    width: 65%;
+    text-align: left;
+}
+
+table td:last-child {
+    width: 35%;
+    text-align: right;
+}
+
+th{
+  background: url(../img/tableheader.png) no-repeat scroll 1px 1px;
+  /* Tem também esta opção sem usar imagemm, somente com gradiente do CSS */
+  /* background: linear-gradient(#fafafa, #e7e7e7); */
+  border: 1px solid #666666;
+  text-align: left;
+  padding: 5px 10px;
+
+}
+
+.table-bordered{
+  border-collapse: collapse;
+}
+
+
+
+.table-bordered td{
+
+  border: 1px solid black;
+}
+
+.table-striped tr:nth-child(even) {
+    background: #F3F3F3;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+td.warning {
+  background-color: #fff;
+  color: #CC9900;
+  text-align: center !important;
+
+}
